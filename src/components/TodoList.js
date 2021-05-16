@@ -1,8 +1,10 @@
-
+import { todoListState } from '../atoms/todoListState'
+import {
+    useRecoilState
+  } from 'recoil';
 
 function TodoList() {
-    // const [inputValue, setInputValue] = useState('');
-    // const setTodoList = useSetRecoilState(todoListState);
+    const [toDoList, setTodoList] = useRecoilState(todoListState);
   
     // const addItem = () => {
     //   setTodoList((oldTodoList) => [
@@ -19,9 +21,11 @@ function TodoList() {
     // const onChange = ({target: {value}}) => {
     //   setInputValue(value);
     // };
+    const listItems = toDoList.map(item => <li class="list-item">{item.text}</li>)
   
     return (
       <ul class="todo-list">
+         {listItems}
       </ul>
     );
   }

@@ -1,13 +1,10 @@
 import{ useState } from 'react';
 import { todoListState } from '../atoms/todoListState'
 import {
-    RecoilRoot,
-    atom,
-    selector,
-    useRecoilState,
-    useSetRecoilState,
-    useRecoilValue,
+    useSetRecoilState
   } from 'recoil';
+  import { v4 as uuidv4 } from 'uuid';
+
 
 function TextInput(props) {
     const [inputValue, setInputValue] = useState('');
@@ -18,12 +15,13 @@ function TextInput(props) {
       };
       const onKeyPress = e => {
           if(e.key === "Enter") {
-            setTodoList((oldTodoList) => [
+            setTodoList( oldTodoList  => [  
                 ...oldTodoList,
                 {
                   text: inputValue,
                   isComplete: false,
-                },
+                  id: uuidv4()
+                }
               ]);
               setInputValue('');
               
