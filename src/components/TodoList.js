@@ -5,23 +5,8 @@ import TodoItem from "./TodoItem";
 function TodoList() {
   const [toDoList, setTodoList] = useRecoilState(todoListState);
 
-  // const addItem = () => {
-  //   setTodoList((oldTodoList) => [
-  //     ...oldTodoList,
-  //     {
-  //       id: getId(),
-  //       text: inputValue,
-  //       isComplete: false,
-  //     },
-  //   ]);
-  //   setInputValue('');
-  // };
-
-  // const onChange = ({target: {value}}) => {
-  //   setInputValue(value);
-  // };
-  const listItems = toDoList.map((item) => (
-    <TodoItem key={item.id} item={item} />
+  const listItems = toDoList.map((item, index) => (
+    <TodoItem key={item.id} item={item} index={index} />
   ));
 
   return <ul class="todo-list">{listItems}</ul>;

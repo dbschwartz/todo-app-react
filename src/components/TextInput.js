@@ -16,7 +16,7 @@ function TextInput(props) {
         ...oldTodoList,
         {
           text: inputValue,
-          isComplete: false,
+          completed: false,
           id: uuidv4(),
         },
       ]);
