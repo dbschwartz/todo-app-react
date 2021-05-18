@@ -16,6 +16,7 @@
   }
 }
 
+/* used styles from https://v2.grommet.io/textinput */
 .text-box {
   box-sizing: border-box;
   font-size: inherit;
@@ -38,6 +39,7 @@
   box-shadow: rgb(111, 255, 176) 0px 0px 2px 2px;
 }
 
+/* used styles from https://v2.grommet.io/list */
 .todo-list {
   list-style: none;
   margin: 0;
@@ -92,6 +94,8 @@
 .buttons {
   display: flex;
 }
+
+/* used icons8-trash icon from icons8.com*/
 
 .trash-button {
   background-image: url(./assets/images/icons8-trash-22.png);
