@@ -88,3 +88,33 @@
 .completed {
   text-decoration: line-through;
 }
+
+.buttons {
+  display: flex;
+}
+
+.trash-button {
+  background-image: url(./assets/images/icons8-trash-22.png);
+  background-size: cover;
+  width: 22px;
+  background-color: transparent;
+  border: none;
+  height: 22px;
+  margin-left: 2.2em;
+  margin-right: 0.7em;
+}
+
+.trash-button:focus {
+  outline: 3px solid rgb(111 255 176);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}

@@ -1,11 +1,12 @@
 /* technique derived from https://moderncss.dev/pure-css-custom-checkbox-style/ */
 
 .checkbox {
-  display: grid;
+  display: inline-grid;
   grid-template-columns: min-content auto;
   grid-gap: 0.5em;
   font-size: 1em;
   color: var(--color);
+  align-self: center;
 }
 .checkbox--disabled {
   color: var(--disabled);
@@ -35,7 +36,7 @@
   height: 1em;
 }
 .checkbox__input input:focus + .checkbox__control {
-  box-shadow: 0 0 0 0.05em #fff, 0 0 0.15em 0.1em currentColor;
+  outline: 3px solid rgb(111 255 176);
 }
 .checkbox__input input:checked + .checkbox__control svg {
   transform: scale(1);
