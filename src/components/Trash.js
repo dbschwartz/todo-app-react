@@ -1,4 +1,3 @@
-import "../Checkbox.css";
 import { todoListState } from "../atoms/todoListState";
 
 import { useRecoilState } from "recoil";

@@ -1,4 +1,4 @@
-import "./App.css";
+import "./assets/css/App.css";
 import { RecoilRoot } from "recoil";
 import TextInput from "./components/TextInput";
 import TodoList from "./components/TodoList";

@@ -98,7 +98,7 @@
 /* used icons8-trash icon from icons8.com*/
 
 .trash-button {
-  background-image: url(./assets/images/icons8-trash-22.png);
+  background-image: url(../images/icons8-trash-22.png);
   background-size: cover;
   width: 22px;
   background-color: transparent;
